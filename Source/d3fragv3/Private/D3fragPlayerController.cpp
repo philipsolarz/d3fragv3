@@ -5,7 +5,6 @@
 #include <D3fragCharacter.h>
 #include <EnhancedInputComponent.h>
 #include <EnhancedInputSubsystems.h>
-//#include "D3fragCharacterMovementComponent.h"
 
 void AD3fragPlayerController::OnPossess(APawn* aPawn)
 {
@@ -41,8 +40,6 @@ void AD3fragPlayerController::OnPossess(APawn* aPawn)
 	if (ActionJump)
 		EnhancedInputComponent->BindAction(ActionJump, ETriggerEvent::Triggered, this, &AD3fragPlayerController::HandleJump);
 
-	//if (ActionShoot)
-	//	EnhancedInputComponent->BindAction(ActionShoot, ETriggerEvent::Triggered, this, &AD3fragPlayerController::HandleShoot);
 }
 
 void AD3fragPlayerController::OnUnPossess()
@@ -63,15 +60,6 @@ void AD3fragPlayerController::HandleMove(const FInputActionValue& InputActionVal
 	PlayerCharacter->AddMovementInput(PlayerCharacter->GetActorForwardVector(), MovementVector.Y);
 	PlayerCharacter->AddMovementInput(PlayerCharacter->GetActorRightVector(), MovementVector.X);
 
-	//if (PlayerCharacter)
-	//{
-	//	if (auto* DMC = Cast<UD3fragCharacterMovementComponent>(PlayerCharacter->GetCharacterMovement()))
-	//	{
-	//		// Feed into Defrag movement
-	//		DMC->CurrentInput.X = MovementVector.Y;  // forward/back
-	//		DMC->CurrentInput.Y = MovementVector.X;  // strafe
-	//	}
-	//}
 }
 
 void AD3fragPlayerController::HandleLook(const FInputActionValue& InputActionValue)
@@ -89,9 +77,3 @@ void AD3fragPlayerController::HandleJump()
 	// Input is 'Digital'
 	PlayerCharacter->Jump();
 }
-
-//void AD3fragPlayerController::HandleShoot()
-//{
-//	// Input is 'Digital'
-//	PlayerCharacter->Jump();
-//}

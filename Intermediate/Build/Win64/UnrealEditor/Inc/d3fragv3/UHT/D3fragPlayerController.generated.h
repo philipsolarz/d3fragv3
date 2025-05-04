@@ -14,7 +14,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define D3FRAGV3_D3fragPlayerController_generated_h
 
-#define FID_Users_phili_Documents_Unreal_Projects_d3fragv3_Source_d3fragv3_Public_D3fragPlayerController_h_61_INCLASS_NO_PURE_DECLS \
+#define FID_Users_phili_Documents_Unreal_Projects_d3fragv3_Source_d3fragv3_Public_D3fragPlayerController_h_56_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAD3fragPlayerController(); \
 	friend struct Z_Construct_UClass_AD3fragPlayerController_Statics; \
@@ -23,7 +23,7 @@ public: \
 	DECLARE_SERIALIZER(AD3fragPlayerController)
 
 
-#define FID_Users_phili_Documents_Unreal_Projects_d3fragv3_Source_d3fragv3_Public_D3fragPlayerController_h_61_ENHANCED_CONSTRUCTORS \
+#define FID_Users_phili_Documents_Unreal_Projects_d3fragv3_Source_d3fragv3_Public_D3fragPlayerController_h_56_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AD3fragPlayerController(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 private: \
@@ -38,11 +38,11 @@ public: \
 
 
 #define FID_Users_phili_Documents_Unreal_Projects_d3fragv3_Source_d3fragv3_Public_D3fragPlayerController_h_19_PROLOG
-#define FID_Users_phili_Documents_Unreal_Projects_d3fragv3_Source_d3fragv3_Public_D3fragPlayerController_h_61_GENERATED_BODY \
+#define FID_Users_phili_Documents_Unreal_Projects_d3fragv3_Source_d3fragv3_Public_D3fragPlayerController_h_56_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Users_phili_Documents_Unreal_Projects_d3fragv3_Source_d3fragv3_Public_D3fragPlayerController_h_61_INCLASS_NO_PURE_DECLS \
-	FID_Users_phili_Documents_Unreal_Projects_d3fragv3_Source_d3fragv3_Public_D3fragPlayerController_h_61_ENHANCED_CONSTRUCTORS \
+	FID_Users_phili_Documents_Unreal_Projects_d3fragv3_Source_d3fragv3_Public_D3fragPlayerController_h_56_INCLASS_NO_PURE_DECLS \
+	FID_Users_phili_Documents_Unreal_Projects_d3fragv3_Source_d3fragv3_Public_D3fragPlayerController_h_56_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

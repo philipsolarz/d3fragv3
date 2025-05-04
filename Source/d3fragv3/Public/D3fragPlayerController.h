@@ -32,10 +32,6 @@ public:
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Player Input|Character Movement")
 	TObjectPtr<UInputAction> ActionJump = nullptr;
 
-	// The Input Action to map to shooting.
-	//UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Player Input|Character Action")
-	//TObjectPtr<UInputAction> ActionShoot = nullptr;
-
 	// The Input Mapping Context to use.
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Player Input|Character Movement")
 	TObjectPtr<UInputMappingContext> InputMappingContext = nullptr;
@@ -44,7 +40,6 @@ protected:
 	void HandleLook(const FInputActionValue& InputActionValue);
 	void HandleMove(const FInputActionValue& InputActionValue);
 	void HandleJump();
-	//void HandleShoot();
 
 	virtual void OnPossess(APawn* aPawn) override;
 	virtual void OnUnPossess() override;
