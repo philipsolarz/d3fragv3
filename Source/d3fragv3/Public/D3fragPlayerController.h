@@ -36,6 +36,9 @@ public:
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Player Input|Character Movement")
 	TObjectPtr<UInputMappingContext> InputMappingContext = nullptr;
 
+	UFUNCTION(BlueprintCallable, Category = "Debug")
+	FVector2D GetCurrentMoveInput() const { return CurrentMoveInput; }
+
 protected:
 	void HandleLook(const FInputActionValue& InputActionValue);
 	void HandleMove(const FInputActionValue& InputActionValue);
@@ -43,6 +46,8 @@ protected:
 
 	virtual void OnPossess(APawn* aPawn) override;
 	virtual void OnUnPossess() override;
+
+	FVector2D CurrentMoveInput = FVector2D::ZeroVector;
 
 private:
 	// USed to store a reference to the InputComponent cast to an EnhancedInputComponent.

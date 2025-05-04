@@ -10,6 +10,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeD3fragPlayerController() {}
 
 // Begin Cross Module References
+COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector2D();
 D3FRAGV3_API UClass* Z_Construct_UClass_AD3fragCharacter_NoRegister();
 D3FRAGV3_API UClass* Z_Construct_UClass_AD3fragPlayerController();
 D3FRAGV3_API UClass* Z_Construct_UClass_AD3fragPlayerController_NoRegister();
@@ -20,9 +21,56 @@ ENHANCEDINPUT_API UClass* Z_Construct_UClass_UInputMappingContext_NoRegister();
 UPackage* Z_Construct_UPackage__Script_d3fragv3();
 // End Cross Module References
 
+// Begin Class AD3fragPlayerController Function GetCurrentMoveInput
+struct Z_Construct_UFunction_AD3fragPlayerController_GetCurrentMoveInput_Statics
+{
+	struct D3fragPlayerController_eventGetCurrentMoveInput_Parms
+	{
+		FVector2D ReturnValue;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Debug" },
+		{ "ModuleRelativePath", "Public/D3fragPlayerController.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AD3fragPlayerController_GetCurrentMoveInput_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(D3fragPlayerController_eventGetCurrentMoveInput_Parms, ReturnValue), Z_Construct_UScriptStruct_FVector2D, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AD3fragPlayerController_GetCurrentMoveInput_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AD3fragPlayerController_GetCurrentMoveInput_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AD3fragPlayerController_GetCurrentMoveInput_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AD3fragPlayerController_GetCurrentMoveInput_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AD3fragPlayerController, nullptr, "GetCurrentMoveInput", nullptr, nullptr, Z_Construct_UFunction_AD3fragPlayerController_GetCurrentMoveInput_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AD3fragPlayerController_GetCurrentMoveInput_Statics::PropPointers), sizeof(Z_Construct_UFunction_AD3fragPlayerController_GetCurrentMoveInput_Statics::D3fragPlayerController_eventGetCurrentMoveInput_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54820401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AD3fragPlayerController_GetCurrentMoveInput_Statics::Function_MetaDataParams), Z_Construct_UFunction_AD3fragPlayerController_GetCurrentMoveInput_Statics::Function_MetaDataParams) };
+static_assert(sizeof(Z_Construct_UFunction_AD3fragPlayerController_GetCurrentMoveInput_Statics::D3fragPlayerController_eventGetCurrentMoveInput_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_AD3fragPlayerController_GetCurrentMoveInput()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_AD3fragPlayerController_GetCurrentMoveInput_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(AD3fragPlayerController::execGetCurrentMoveInput)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(FVector2D*)Z_Param__Result=P_THIS->GetCurrentMoveInput();
+	P_NATIVE_END;
+}
+// End Class AD3fragPlayerController Function GetCurrentMoveInput
+
 // Begin Class AD3fragPlayerController
 void AD3fragPlayerController::StaticRegisterNativesAD3fragPlayerController()
 {
+	UClass* Class = AD3fragPlayerController::StaticClass();
+	static const FNameNativePtrPair Funcs[] = {
+		{ "GetCurrentMoveInput", &AD3fragPlayerController::execGetCurrentMoveInput },
+	};
+	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 }
 IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(AD3fragPlayerController);
 UClass* Z_Construct_UClass_AD3fragPlayerController_NoRegister()
@@ -105,6 +153,10 @@ struct Z_Construct_UClass_AD3fragPlayerController_Statics
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_PlayerCharacter;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
+	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
+		{ &Z_Construct_UFunction_AD3fragPlayerController_GetCurrentMoveInput, "GetCurrentMoveInput" }, // 3282912731
+	};
+	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AD3fragPlayerController>::IsAbstract,
 	};
@@ -135,11 +187,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_AD3fragPlayerController
 	"Game",
 	&StaticCppClassTypeInfo,
 	DependentSingletons,
-	nullptr,
+	FuncInfo,
 	Z_Construct_UClass_AD3fragPlayerController_Statics::PropPointers,
 	nullptr,
 	UE_ARRAY_COUNT(DependentSingletons),
-	0,
+	UE_ARRAY_COUNT(FuncInfo),
 	UE_ARRAY_COUNT(Z_Construct_UClass_AD3fragPlayerController_Statics::PropPointers),
 	0,
 	0x009002A5u,
@@ -166,10 +218,10 @@ AD3fragPlayerController::~AD3fragPlayerController() {}
 struct Z_CompiledInDeferFile_FID_Users_phili_Documents_Unreal_Projects_d3fragv3_Source_d3fragv3_Public_D3fragPlayerController_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AD3fragPlayerController, AD3fragPlayerController::StaticClass, TEXT("AD3fragPlayerController"), &Z_Registration_Info_UClass_AD3fragPlayerController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AD3fragPlayerController), 1256087958U) },
+		{ Z_Construct_UClass_AD3fragPlayerController, AD3fragPlayerController::StaticClass, TEXT("AD3fragPlayerController"), &Z_Registration_Info_UClass_AD3fragPlayerController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AD3fragPlayerController), 2219358684U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_phili_Documents_Unreal_Projects_d3fragv3_Source_d3fragv3_Public_D3fragPlayerController_h_82995690(TEXT("/Script/d3fragv3"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_phili_Documents_Unreal_Projects_d3fragv3_Source_d3fragv3_Public_D3fragPlayerController_h_2196419246(TEXT("/Script/d3fragv3"),
 	Z_CompiledInDeferFile_FID_Users_phili_Documents_Unreal_Projects_d3fragv3_Source_d3fragv3_Public_D3fragPlayerController_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_phili_Documents_Unreal_Projects_d3fragv3_Source_d3fragv3_Public_D3fragPlayerController_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

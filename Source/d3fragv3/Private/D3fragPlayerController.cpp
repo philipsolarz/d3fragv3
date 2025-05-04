@@ -56,6 +56,8 @@ void AD3fragPlayerController::HandleMove(const FInputActionValue& InputActionVal
 	// Input is a Vector2D
 	const FVector2D MovementVector = InputActionValue.Get<FVector2D>();
 
+	CurrentMoveInput = MovementVector;
+
 	// Add movement to the Player's Character Pawn
 	PlayerCharacter->AddMovementInput(PlayerCharacter->GetActorForwardVector(), MovementVector.Y);
 	PlayerCharacter->AddMovementInput(PlayerCharacter->GetActorRightVector(), MovementVector.X);

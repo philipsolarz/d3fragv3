@@ -14,4 +14,6 @@ class D3FRAGV3_API AD3fragHUD : public AHUD
 {
 	GENERATED_BODY()
 	
+	void DrawHUD();
+
 };
