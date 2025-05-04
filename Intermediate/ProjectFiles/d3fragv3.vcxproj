@@ -260,7 +260,10 @@
     <None Include="..\..\d3fragv3.uproject"/>
     <None Include="..\..\Source\d3fragv3.Target.cs"/>
     <None Include="..\..\Source\d3fragv3Editor.Target.cs"/>
+    <None Include="..\..\.gitattributes"/>
+    <None Include="..\..\.gitignore"/>
     <None Include="..\..\.vsconfig"/>
+    <None Include="..\..\README.md"/>
     <None Include="..\..\Config\DefaultEditor.ini"/>
     <None Include="..\..\Config\DefaultEngine.ini"/>
     <None Include="..\..\Config\DefaultGame.ini"/>
