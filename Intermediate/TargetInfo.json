@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "d3fragv3",
+			"Path": "..\\Source\\d3fragv3.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "d3fragv3Editor",
+			"Path": "..\\Source\\d3fragv3Editor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

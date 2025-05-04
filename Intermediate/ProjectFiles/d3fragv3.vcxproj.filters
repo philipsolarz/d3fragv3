@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\d3fragv3.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\d3fragv3.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\d3fragv3Editor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\.vsconfig" />
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\d3fragv3">
+      <UniqueIdentifier>{9FEF36D5-CEBE-373D-9710-4E5C18570F4C}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\d3fragv3\d3fragv3.Build.cs">
+      <Filter>Source\d3fragv3</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\d3fragv3\d3fragv3.cpp">
+      <Filter>Source\d3fragv3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\d3fragv3\d3fragv3.h">
+      <Filter>Source\d3fragv3</Filter>
+    </ClCompile>
+    <Filter Include="Source\d3fragv3\Private">
+      <UniqueIdentifier>{6556653B-61E7-3389-9EEA-1618F81C137B}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\d3fragv3\Private\D3fragCharacter.cpp">
+      <Filter>Source\d3fragv3\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\d3fragv3\Private\D3fragCharacterMovementComponent.cpp">
+      <Filter>Source\d3fragv3\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\d3fragv3\Private\D3fragHUD.cpp">
+      <Filter>Source\d3fragv3\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\d3fragv3\Private\D3fragPlayerController.cpp">
+      <Filter>Source\d3fragv3\Private</Filter>
+    </ClCompile>
+    <Filter Include="Source\d3fragv3\Public">
+      <UniqueIdentifier>{62E5BFEF-EEE8-36E4-9E85-73F0ED36FA3E}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\d3fragv3\Public\D3fragCharacter.h">
+      <Filter>Source\d3fragv3\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\d3fragv3\Public\D3fragCharacterMovementComponent.h">
+      <Filter>Source\d3fragv3\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\d3fragv3\Public\D3fragHUD.h">
+      <Filter>Source\d3fragv3\Public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\d3fragv3\Public\D3fragPlayerController.h">
+      <Filter>Source\d3fragv3\Public</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
